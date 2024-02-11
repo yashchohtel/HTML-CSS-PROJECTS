@@ -26,6 +26,8 @@ body {
     height: 20rem;
     background-color: #504e59;
     position: relative;
+    z-index: -1;
+    top: -5px
 }
 
 .cradle div::before {
@@ -39,48 +41,56 @@ body {
     left: -33px;
 }
 
-.cradle div:first-child{
-    animation: swing 2s linear infinite;
+.cradle div:first-child {
+    animation: swing 1s linear infinite;
     transform-origin: top left;
 }
 
 @keyframes swing {
-    0%{
+    0% {
         rotate: 0deg;
     }
-    25%{
+
+    25% {
         rotate: 30deg;
     }
-    50%{
+
+    50% {
         rotate: 0deg;
     }
-    75%{
+
+    75% {
         rotate: 0deg;
     }
-    100%{
-        rotate:0deg;
+
+    100% {
+        rotate: 0deg;
     }
 }
 
-.cradle div:last-child{
-    animation: swing-2 2s linear infinite reverse;
+.cradle div:last-child {
+    animation: swing-2 1s linear infinite;
     transform-origin: top left;
 }
 
 @keyframes swing-2 {
-    0%{
+    0% {
         rotate: 0deg;
     }
-    25%{
+
+    25% {
+        rotate: 0deg;
+    }
+
+    50% {
+        rotate: 0deg;
+    }
+
+    75% {
         rotate: -30deg;
     }
-    50%{
+
+    100% {
         rotate: 0deg;
     }
-    75%{
-        rotate: 0deg;
-    }
-    100%{
-        rotate:0deg;
-       }
 }
