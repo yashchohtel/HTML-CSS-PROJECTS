@@ -26,6 +26,8 @@ h1 {
         animation: shake 0.3s linear infinite alternate;
     }
 
+    transform: 0.2s ease;
+
 }
 
 @keyframes shake {
