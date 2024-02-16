@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #ecf0f1;
+    position: relative;
+
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+}
+
+.container .item{
+    outline: 2px solid black;
+    border: 2px solid black;
+}
+
+.container .item.item-1{
+    grid-area: 1/1/5/5;
+    /* border: 3px solid black; */
+}
+
+.container .item.item-2{
+    grid-area: 1/5/3/7;
+    /* border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black; */
+}
+
+.container .item.item-3{
+    grid-area: 1/7/3/9;
+}
+.container .item.item-4{
+    grid-area: 3/5/5/7;
+}
+
+.container .item.item-5{
+    grid-area: 3/7/5/9;
+    /* border: 3px solid black; */
+}
+
+
+.container .item.item-6{
+    grid-area: 5/1/7/3;
+}
+
+
+.container .item.item-7{
+    grid-area: 5/3/7/7;
+}
+
+
+.container .item.item-8{
+    grid-area: 5/7/-1/-1;
+}
+
+.container .item.item-9{
+    grid-area: 7/1/-1/5;
+    /* border: 3px solid black; */
+}
+
+
+.container .item.item-10{
+    grid-area: 7/5/-1/7;
+}
+
+
+/* ================================================================= */
+
+.container .line{
+    border-left: 1.5px dotted black;
+    position: absolute;
+    height: 110%;
+}
+
+.container .line-1{
+    top: -5%;
+    left: 0;
+}
+
+.container .line-2{
+    top: -5%;
+    left: 12.5%;
+}
+
+.container .line-3{
+    top: -5%;
+    left: 25%;
+}
+
+.container .line-4{
+    top: -5%;
+    left: 37.5%;
+}
+
+.container .line-5{
+    top: -5%;
+    left: 50%;
+}
+
+.container .line-6{
+    top: -5%;
+    left: 62.5%;
+}
+
+.container .line-7{
+    top: -5%;
+    left: 75%;
+}
+
+.container .line-8{
+    top: -5%;
+    left: 87.5%;
+}
+
+.container .line-9{
+    top: -5%;
+    left: 100%;
+}
+
+
+
+.container .line-h{
+    width: 110%;
+    position: absolute;
+    left: -5%;
+    border-bottom: 1.5px dotted black;
+}
+
+.container .line-h-1{
+    left: -5%;
+    top: 0;
+}
+
+.container .line-h-2{
+    left: -5%;
+    top: 12.5%;
+}
+
+.container .line-h-3{
+    left: -5%;
+    top: 25%;
+}
+
+.container .line-h-4{
+    left: -5%;
+    top: 37.5%;
+}
+
+.container .line-h-5{
+    left: -5%;
+    top: 50%;
+}
+
+.container .line-h-6{
+    left: -5%;
+    top: 62.5%;
+}
+
+.container .line-h-7{
+    left: -5%;
+    top: 75%;
+}
+
+.container .line-h-8{
+    left: -5%;
+    top: 87.5%;
+}
+
+.container .line-h-9{
+    left: -5%;
+    top: 100%;
+}
