@@ -1,0 +1,23 @@
+Todolist Instruction 
+पार्ट 1 
+स्टेप 1 : सबसे पहले उन सभी ID and classes को सिलेक्ट करे जो की एलिमेंट्स को टारगेट करने के लिए इम्पोर्टेन्ट हे 
+स्टेप 2 : एक इवेंट listner क्रिएट करे और जब भी आप सबमिट प्रेस करे तोह निचे दिए गए कार्य होना चाहिए 
+ i )एक ऐरे (Array ) क्रिएट करे उसके अंदर सभी errors को स्टोर करे और पुराने errors को क्लियर करे 
+ii )उसके बाद ये वेलिडेशन चेक करे 
+  a . Ensure the username is at least 6 characters long
+  b . Ensure the password is at least 10 characters long
+  c . Ensure the password and confirmation password match
+  d . Ensure the terms checkbox is checked
+स्टेप 3 : अगर कोई भी एरर हे तोह फॉर्म को सबमिट होने से रोके! उसके लिए आपको preventDefault() का यूज़ करना होगा इसके बारे में गूगल करके देखे 
+
+पार्ट 2 - Show Errors 
+स्टेप 1 : सभी errors  को errors-list के अंदर add  करे
+स्टेप 2 : सभी erros को "li" टैग के अंदर ऐड करना हे  
+स्टेप 3 : errors क्लास के अंदर show क्लास को ऐड करे html में 
+
+पार्ट 3 - Clear Errors 
+स्टेप 1 : सभी "li " एलिमेंट्स को loop करके रिमूव करे (ये करना थोड़ा कठिन होगा )
+स्टेप 2 : show क्लास को रिमूव करे erros div में से 
+
+
+

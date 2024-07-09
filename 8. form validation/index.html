@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+
+    <!-- style sheet link -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div id="errorBox">
+
+        <ol id="orderList"></ol>
+
+        <span id="errorBoxClose"><i class="fa-solid fa-xmark"></i></span>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="forms">
+
+            <!-- regristration form -->
+            <div class="form loign">
+
+                <span class="title">Regristration</span>
+
+                <form action="/thankyou.html" id="forms">
+
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" id="nameField" autocomplete="off">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="email" placeholder="Enter your email" id="emailField" autocomplete="off">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" id="passField">
+                        <i class="fa-solid fa-lock icon"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm password" id="cnfPassField">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <span><i class="fa-solid fa-eye-slash showHidePass"></i></span>
+                    </div>
+
+                    <div class="check-box-text">
+                        <input type="checkbox" id="checkField">
+                        <label for="checkField" style="cursor: pointer;" class="text">Agree to terms?</label>
+                    </div>
+
+                    <div class="input-field buttom">
+                        <input type="submit" value="Signup Now" id="subBtn">
+                    </div>
+
+                    <div class="login-signup">
+                        <span class="text">Allready have an account?
+                            <a href="#" class="text signup-text">Login now</a>
+                        </span>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- javascript file link -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
