@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view weather</title>
+
+    <!-- css style file link -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <!-- main container -->
+    <div class="main-container">
+
+        <!-- header -->
+        <header class="header">
+
+            <!-- searchbar container-->
+
+            <!-- search field -->
+            <form action="" class="search myForm" id="searchBar">
+
+                <input type="text" class="searchField" id="searchField" placeholder="Search your city..."
+                    autocomplete="off">
+
+                <!-- search icon  -->
+                <button type="submit" class="icon" id="searchBtn"> <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </form>
+
+
+        </header>
+
+        <!-- horizontal rule -->
+        <div class="h_rule_1"></div>
+
+        <!-- main info container -->
+        <div class="main_info">
+
+            <!-- city, country -->
+            <div class="city_name">
+                <span class="city">loading</span>
+                <span>-</span>
+                <span class="country"></span>
+            </div>
+
+            <!-- date and time -->
+
+            <!-- sat aug 03 22:07:22 -->
+            <div class="date_time">
+                <p class="date_and_time"></p>
+            </div>
+
+        </div>
+
+        <!-- temp and weather condition -->
+        <div class="temp_wc">
+
+            <!-- image -->
+            <div class="img_container">
+                <img src="" class="image" alt="clear cloud">
+            </div>
+
+            <!-- temperature -->
+            <p class="temp_n_wc"><span class="temperature"></span><span>|</span><span class="condition"></span></p>
+
+        </div>
+
+        <!-- additinal weaterh information -->
+        <div class="add_info">
+
+
+            <div class="info1 humidity"> <i class="fa-solid fa-droplet"></i> <span></span> </div>
+            <div class="info2 wind_speed"> <i class="fa-solid fa-wind"></i> <span></span></div>
+            <div class="info3 sea_level"> <i class="fa-solid fa-water"></i> <span></span> </div>
+            <div class="info4 ground_level"> <i class="fa-solid fa-grip-lines"></i> <span></span> </div>
+
+        </div>
+
+        <!-- for error handling -->
+        <div class="error">
+
+            <!-- error message -->
+            <p class="error_msg">Unable to find your city</p>
+
+            <!-- error image -->
+            <div class="img">
+                <img src="/images/no result.png" alt="404 error">
+            </div>
+
+
+        </div>
+
+        <!-- loading  animaion-->
+        <div class="loder">
+            <div class="load">Loading</div>
+        </div>
+    </div>
+
+    <!-- script file link -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
